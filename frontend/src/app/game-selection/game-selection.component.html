@@ -1,0 +1,14 @@
+<div class="p-4 mb-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+  <div class="flex items-center justify-between">
+    <div>
+      <h3 class="text-lg font-bold">{{ game?.name }}</h3>
+      <p class="text-sm text-gray-500">{{ game?.description }}</p>
+    </div>
+    <button
+      class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-all"
+      (click)="selectGame()"
+    >
+      Обрати
+    </button>
+  </div>
+</div>

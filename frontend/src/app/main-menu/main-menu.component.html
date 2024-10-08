@@ -1,0 +1,19 @@
+<div class="flex items-center justify-center min-h-screen p-6 bg-gray-100">
+  <div class="w-full max-w-lg">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-2">Привіт, {{ username }}!</h2>
+    <h3 class="text-xl text-center text-gray-600 mb-6">Виберіть гру для гри з друзями</h3>
+
+    <!-- Список ігор -->
+    <app-game-selection *ngFor="let game of games" [game]="game"></app-game-selection>
+
+    <!-- Кнопка для приєднання до лобі -->
+    <div class="mt-6 text-center">
+      <button
+        class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-all"
+        (click)="navigateToJoinLobby()"
+      >
+        Приєднатися до лобі
+      </button>
+    </div>
+  </div>
+</div>

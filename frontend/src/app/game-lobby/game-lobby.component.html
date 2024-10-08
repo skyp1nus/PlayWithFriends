@@ -1,0 +1,15 @@
+<div class="flex items-center justify-center min-h-screen p-6 bg-gray-100">
+  <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Лобі гри: {{ game?.name }}</h2>
+    <p class="text-center text-gray-700 mb-6">
+      Ваш код лобі: <span class="font-bold text-gray-900">{{ lobbyCode }}</span>
+    </p>
+    <p class="text-center text-gray-500 mb-4">Поділіться цим кодом з другом, щоб він приєднався!</p>
+    <button
+      class="w-full px-4 py-2 text-white bg-red-500 rounded-lg hover:bg-red-600 transition-all"
+      (click)="startGame()"
+    >
+      Почати гру
+    </button>
+  </div>
+</div>
