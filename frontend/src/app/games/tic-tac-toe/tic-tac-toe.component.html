@@ -1,0 +1,17 @@
+<div class="flex items-center justify-center min-h-screen p-6 bg-gray-100">
+  <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Гра: Хрестики-Нолики</h2>
+    <div class="grid grid-cols-3 gap-4">
+      <div
+        *ngFor="let cell of board; let i = index"
+        class="flex items-center justify-center w-20 h-20 bg-gray-200 rounded-lg text-3xl cursor-pointer"
+        (click)="makeMove(i)"
+      >
+        {{ cell }}
+      </div>
+    </div>
+    <div *ngIf="winner" class="mt-4 text-center text-xl font-bold">
+      Переможець: {{ winner }}
+    </div>
+  </div>
+</div>

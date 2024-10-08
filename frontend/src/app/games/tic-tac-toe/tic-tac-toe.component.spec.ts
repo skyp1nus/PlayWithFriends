@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GameInterfaceComponent } from './game-interface.component';
+import { TicTacToeComponent } from './tic-tac-toe.component';
 
-describe('GameInterfaceComponent', () => {
-  let component: GameInterfaceComponent;
-  let fixture: ComponentFixture<GameInterfaceComponent>;
+describe('TicTacToeComponent', () => {
+  let component: TicTacToeComponent;
+  let fixture: ComponentFixture<TicTacToeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GameInterfaceComponent]
+      imports: [TicTacToeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GameInterfaceComponent);
+    fixture = TestBed.createComponent(TicTacToeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
